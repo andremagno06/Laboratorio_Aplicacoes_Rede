@@ -11,31 +11,6 @@ public class AES {
 
     public AES() {
     }
-/*
-    public static void main(String[] args) {
-
-        try {
-
-            System.out.println("Texto Puro: " + textopuro);
-
-            byte[] textoencriptado = criptografa(textopuro, chaveencriptacao);
-
-            System.out.print("Texto Encriptado: ");
-
-            for (int i = 0; i < textoencriptado.length; i++) {
-                System.out.print(new Integer(textoencriptado[i]) + " ");
-            }
-
-            System.out.println("");
-
-            String textodecriptado = descriptografa(textoencriptado, chaveencriptacao);
-
-            System.out.println("Texto Decriptado: " + textodecriptado);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
 
     public  byte[] criptografa(String textopuro, String chaveencriptacao) throws Exception {
         Cipher encripta = Cipher.getInstance("AES/CBC/PKCS5Padding", "SunJCE");
